@@ -24,14 +24,13 @@ within the project directory
 
 Configure the .env file for Pinecone and OpenAI usage.
 
-Now execute courses.py using the play button in VSCode.
+### If you want to regenerate the data:
+- Now execute courses.py using the play button in VSCode.
+- Once that is done running, a csv should be created.
+- Make sure to log into the QReports at https://qreports.fas.harvard.edu/
+- Once you have done that, execute course_data.py. This may take several minutes.
 
-Once that is done running, a csv should be created.
-
-Make sure to log into the QReports at https://qreports.fas.harvard.edu/
-Once you have done that, execute course_data.py. This may take several minutes.
-
-After that, update the .env file:
+### Update the .env file:
 - Create an OpenAI api Key at https://platform.openai.com/api-keys
 - Create an index at https://app.pinecone.io/ with dimensions of 1536 using cosine and with a pod type of p2. 
 
