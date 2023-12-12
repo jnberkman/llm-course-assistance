@@ -24,8 +24,6 @@ within the project directory
 
 Configure the .env file for Pinecone and OpenAI usage.
 
-The Pinecone index's dimensions should be 1536 using cosine and the pod type should be p2. 
-
 Now execute courses.py using the play button in VSCode.
 
 Once that is done running, a csv should be created.
@@ -33,9 +31,9 @@ Once that is done running, a csv should be created.
 Make sure to log into the QReports at https://qreports.fas.harvard.edu/
 Once you have done that, execute course_data.py. This may take several minutes.
 
-After that, if you do not want to use the API keys provided:
+After that, update the .env file:
 - Create an OpenAI api Key at https://platform.openai.com/api-keys
-- Create an index named CS50 at https://app.pinecone.io/ and update the respective pinecone.init sections in embeddings.py and query.py
+- Create an index at https://app.pinecone.io/ with dimensions of 1536 using cosine and with a pod type of p2. 
 
 Next, execute embeddings.py. This may take several minutes.
 
