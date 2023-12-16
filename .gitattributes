@@ -1,1 +1,2 @@
 llm-course-assistance/raw_data/qguides/* linguist-vendored
+*.html linguist-detectable=false
